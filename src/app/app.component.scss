@@ -10,7 +10,7 @@
     grid-template-rows: 0.5fr auto;
     position: relative;
     background: $black;
-    font-family: 'Noto Sans TC', sans-serif;
+    font-family: $regular;
   }
   
   /*
@@ -58,24 +58,46 @@
   }
   
   .slide-menu {
-    border-right: 0.1em solid $light-red;
-    font-family: 'Noto Sans TC', sans-serif;
+    font-family: $regular;
+    font-weight:300;
     transform: translateX(-103%);
     position: relative;
+    opacity:0.8;
     top: 0;
     left: 0;    
     z-index: 10;
     height: 100%;
     width: 80%;
     max-width: 26rem;
-    background-color: $black;
+    background-color: $dark-grey;
     box-shadow: 0 0 2rem $dark-grey;
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 2fr 4fr 1fr;
+    grid-template-rows: 1fr 0.1fr 1fr;
     grid-gap: 1rem;
     transition: transform 150ms linear;
     will-change: transform;
+  }
+
+  .menu-button-container {
+      width:100%;
+  }
+
+  .button-name {
+      padding-left:3rem;
+  }
+
+  .menu-button-icon {
+  }
+  .menu-button {
+    text-decoration: none;
+    color:$white;
+    text-align:left;
+    margin-left:4rem;
+    font-size:1.2rem;
+    padding-top:0.2rem;
+    padding-bottom:0.2rem;
+    border-right: 0.2rem solid $light-red;
   }
   
   .slide-menu-active {
@@ -91,7 +113,7 @@
     width: 100%;
     align-content: center;
     color: white;
-    box-shadow: 0 0.5rem 2rem $black;
+    //box-shadow: 0 0.5rem 2rem $black;
   }
   
   .greeting__text {
