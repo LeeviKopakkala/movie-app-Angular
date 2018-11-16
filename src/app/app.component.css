@@ -157,11 +157,6 @@
     animation: 1s ease-in-out 0ms 1 fadein;
   }
   
-  .main__header-dark {
-    background-color: #2B244D;
-    color: white;
-  }
-  
   .toggle-button__container {
     cursor: pointer;
     position: relative;
@@ -237,6 +232,7 @@
   .logo__icon {
     height: 2rem;
     margin-left: 1rem;
+
   }
   
   .logo__text {

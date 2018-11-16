@@ -9,7 +9,7 @@
     grid-template-columns: auto;
     grid-template-rows: 0.5fr auto;
     position: relative;
-    background: $dark-grey;
+    background: $black;
     font-family: 'Noto Sans TC', sans-serif;
   }
   
@@ -58,6 +58,7 @@
   }
   
   .slide-menu {
+    border-right: 0.1em solid $light-red;
     font-family: 'Noto Sans TC', sans-serif;
     transform: translateX(-103%);
     position: relative;
