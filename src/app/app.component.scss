@@ -8,6 +8,7 @@
     grid-template-columns: auto;
     grid-template-rows: 0.5fr auto;
     position: relative;
+    background: $dark-grey;
   }
   
   /*
@@ -44,7 +45,7 @@
     left: 0;
     height: 100%;
     width: 100%;
-    background-color: #0c1066;
+    background-color: $black;
     opacity: 0;
     transition: opacity 300ms linear;
     will-change: opacity;
@@ -65,7 +66,7 @@
     width: 80%;
     max-width: 26rem;
     background-color: white;
-    box-shadow: 0 0 2rem rgba(0, 0, 255, 0.1);
+    box-shadow: 0 0 2rem $white;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 2fr 4fr 1fr;
@@ -88,7 +89,7 @@
     width: 100%;
     align-content: center;
     color: white;
-    box-shadow: 0 0.5rem 2rem rgba(0, 0, 255, 0.2);
+    box-shadow: 0 0.5rem 2rem $black;
   }
   
   .greeting__text {
@@ -149,64 +150,19 @@
     display: grid;
     grid-template-columns: 1fr 1fr 0.25fr;
     grid-template-rows: 1fr;
-    box-shadow: 0 0 2rem rgba(0, 0, 255, 0.1);
+    box-shadow: 0 0 2rem $black;
     height: 4rem;
     margin: 0;
+    background-color: $black;
     align-items: center;
     transition: background-color 500ms linear;
     animation: 1s ease-in-out 0ms 1 fadein;
-  }
-  
-  .main__header-dark {
-    background-color: #2B244D;
-    color: white;
   }
   
   .toggle-button__container {
     cursor: pointer;
     position: relative;
     margin: 0 0.5rem;
-  }
-  
-  .mode-toggle__input {
-    -webkit-appearance: none;
-    -moz-appearance: none;
-  }
-  
-  .mode-toggle__bg {
-    height: 1rem;
-    width: 2rem;
-    border-radius: 0.5rem;
-    background-color: rgba(0, 0, 0, 0.5);
-    display: inline-block;
-    transition: background-color 300ms linear;
-  }
-  
-  .mode-toggle__circle {
-    height: 1.30rem;
-    width: 1.30rem;
-    background-color: #2B244D;
-    position: absolute;
-    top: -0.2rem;
-    border-radius: 50%;
-    box-shadow: 0 0 0 rgba(0, 0, 255, 0.5);
-    transition: left 300ms linear;
-    left: 0.1rem;
-  }
-  
-  .mode-toggle__circle-checked {
-    background-color: white;
-    left: 1.75rem;
-  }
-  
-  .mode-toggle__bg-checked {
-    background-color: #FF0070;
-  }
-  
-  .mode-toggle__text {
-    font-size: 0.75rem;
-    text-transform: uppercase;
-    letter-spacing: 0.1rem;
   }
   
   /*Content*/
@@ -248,7 +204,7 @@
   }
   
   .hamburger__icon__fill {
-    fill: #2B244D;
+    fill: $white;
   }
   
   .hamburger__icon__fill-dark {
