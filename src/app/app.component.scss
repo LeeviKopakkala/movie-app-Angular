@@ -1,4 +1,5 @@
 @import "./../styles.scss";
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+TC');
 
 
 .root__container {
@@ -9,6 +10,7 @@
     grid-template-rows: 0.5fr auto;
     position: relative;
     background: $dark-grey;
+    font-family: 'Noto Sans TC', sans-serif;
   }
   
   /*
@@ -56,7 +58,7 @@
   }
   
   .slide-menu {
-    box-sizing: border-box;
+    font-family: 'Noto Sans TC', sans-serif;
     transform: translateX(-103%);
     position: relative;
     top: 0;
@@ -65,8 +67,8 @@
     height: 100%;
     width: 80%;
     max-width: 26rem;
-    background-color: white;
-    box-shadow: 0 0 2rem $white;
+    background-color: $black;
+    box-shadow: 0 0 2rem $dark-grey;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 2fr 4fr 1fr;
@@ -80,10 +82,9 @@
   }
   
   .menu-header {
-    background: linear-gradient(to right, #00FF9B, #5f84fb);
     display: grid;
     grid-template-rows: 1fr 4fr;
-    grid-template-columns: 1fr 4fr;
+    grid-template-columns: 3fr 4fr;
     grid-template-areas: "greeting greeting" "image details";
     box-sizing: border-box;
     width: 100%;
@@ -93,20 +94,19 @@
   }
   
   .greeting__text {
-    grid-area: greeting;
     font-size: 1.25rem;
-    letter-spacing: 0.15rem;
-    text-transform: uppercase;
     margin-top: 1rem;
+    text-align:center;
+    width:100%;
     justify-self: center;
     align-self: center;
+    color:$dark-red;
   }
   
   .account-details {
     grid-area: details;
     display: flex;
     flex-flow: column;
-    margin-left: 1rem;
     align-self: center;
   }
   
@@ -144,11 +144,16 @@
     max-width: 4rem;
   }
   
+  .header-text{
+    text-align:left;
+    color:$light-red;
+  }
+
   /*Header*/
   .main__header {
     width: 100%;
     display: grid;
-    grid-template-columns: 1fr 1fr 0.25fr;
+    grid-template-columns: 0fr 0.03fr 0.25fr;
     grid-template-rows: 1fr;
     box-shadow: 0 0 2rem $black;
     height: 4rem;
@@ -191,7 +196,7 @@
   }
   
   .logo__icon {
-    height: 2rem;
+    height: 2.2rem;
     margin-left: 1rem;
   }
   
