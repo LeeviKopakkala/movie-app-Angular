@@ -1,3 +1,74 @@
+@import "../../styles.scss";
+
+
 .login {
+    align-content:center;
     text-align:center;
+    position:relative;
+    z-index:5;
+    margin:0 auto;
+    height:100%;
+    width:80%;
+    max-width: 80%;
+    left:-2rem;
+    align-content: center;
+    align-self:center;
+    align-items:center;
+    background:$dark-grey;
+    padding:2rem;
+    padding-left:0;
+    padding-right:0;
+    border-left: 3rem solid $light-red;
+}
+
+@media only screen and (max-width: 800px) {
+    .login {
+        max-width:100% !important;
+        width:100%;
+        padding:2rem;
+        left:-2rem;
+        border-left:0;
+        border-bottom:2rem solid $light-red;
+    }
+    input {
+        width:100%;
+    }
+}
+
+#background-image{
+    position:fixed;
+    z-index:2;
+    left: 0;
+    top: 0;
+    height: 100%;
+    background-size: cover;
+    background-size: 1920px auto;
+}
+
+#logo-login {
+    z-index:5;
+    position: relative;
+    width:30%;
+    margin-left:-1rem;
+}
+
+input {
+    font-family:$regular;
+    border: 0 solid black;
+    width:70%;
+    border-bottom: 1px solid $light-grey;
+    margin-top:1rem;
+    margin-bottom:1rem;
+    background:$dark-grey;
+    color:$white;
+}
+
+button {
+    font-family:$regular;
+    padding:0.8rem;
+    background: $light-red;
+    border:0;
+    color: $white;
+    width:5rem;
+    width:5rem;
 }
