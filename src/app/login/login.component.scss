@@ -18,7 +18,9 @@
     padding:2rem;
     padding-left:0;
     padding-right:0;
-    border-left: 3rem solid $light-red;
+    border-bottom: 3rem solid $light-red;
+    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.247);
+    opacity:0.9;
 }
 
 @media only screen and (max-width: 800px) {
@@ -45,22 +47,31 @@
     background-size: 1920px auto;
 }
 
+.login-welcome {
+    font-weight:300;
+    margin-left:15%;
+    color:white;
+    text-align:left;
+}
+
 #logo-login {
     z-index:5;
     position: relative;
     width:30%;
     margin-left:-1rem;
+    opacity:1;
 }
 
 input {
     font-family:$regular;
     border: 0 solid black;
-    width:70%;
+    width:60%;
     border-bottom: 1px solid $light-grey;
     margin-top:1rem;
     margin-bottom:1rem;
     background:$dark-grey;
     color:$white;
+    padding:0.5em;
 }
 
 button {
