@@ -9,12 +9,12 @@ export class JwtInterceptor implements HttpInterceptor {
     constructor(private authenticationService: AuthenticationService) {}
 
     intercept(request: HttpRequest<any>, next: HttpHandler): Observable<HttpEvent<any>> {
-        // add authorization header with jwt token if available
+        // Add JWT and Basic Auth Headers
         let currentUser = this.authenticationService.currentUserValue;
         if (currentUser && currentUser.token) {
             request = request.clone({
                 setHeaders: { 
-                    Authorization : `Basic ZW5kdW14Oll0U21DbU9wU1I=`,
+                    Authorization : `Basic ZW5kdW14Oll0U21DbU9wU1I=`, // This to get past Basic Auth
                     'JWT-X': `Bearer ${currentUser.token}`
                 }
             });
