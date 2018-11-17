@@ -17,7 +17,7 @@ export class AuthenticationService {
     }
 
     login(username: string, password: string) {
-        return this.http.post<any>(`${Config.apiUrl}/user/login`, { email: username, password: password })
+        return this.http.post<any>(`${Config.apiUrl}/user/login`, { Authorization: 'Basic ZW5kdW14Oll0U21DbU9wU1I=' ,email: username, password: password })
             .pipe(map(user => {
                 // If User is set and has a token
                 if (user && user.token) {
