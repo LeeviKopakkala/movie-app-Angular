@@ -1,0 +1,15 @@
+@import "../../styles.scss";
+
+.popular-header {
+    color:$light-red;
+    font-weight:100;
+    text-align:left;
+    background-color:#FFF;
+    width:100%;
+}
+
+.popular-movies {
+    margin-left: 0rem !important;
+    width:20rem;
+    max-width:70%;
+}

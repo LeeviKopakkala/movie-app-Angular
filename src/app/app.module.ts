@@ -14,7 +14,7 @@ import { ErrorInterceptor } from './helpers/error.interceptor';
 import { JwtInterceptor } from './helpers/jwt.interceptor'; 
 
 import { AuthenticationService } from '../services/auth.service';
-import { SuggestedComponent } from './suggested/suggested.component';
+import { PopularComponent } from './popular/popular.component';
 
 library.add(faFilm, faHome, faCog );
 
@@ -23,7 +23,7 @@ library.add(faFilm, faHome, faCog );
     AppComponent,
     HomeComponent,
     LoginComponent,
-    SuggestedComponent
+    PopularComponent
   ],
   imports: [
     BrowserModule,

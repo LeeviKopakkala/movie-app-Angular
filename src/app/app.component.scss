@@ -94,8 +94,6 @@
       padding-left:3rem;
   }
 
-  .menu-button-icon {
-  }
   .menu-button {
     text-decoration: none;
     color:$white;
@@ -182,6 +180,7 @@
   /*Header*/
   .main__header {
     width: 100%;
+    opacity:0.8;
     display: grid;
     grid-template-columns: 0fr 0.03fr 0.25fr;
     grid-template-rows: 1fr;
@@ -264,11 +263,6 @@
     transition: opacity 300ms linear;
   }
   
-  .main-container__bg-dark {
-    opacity: 1;
-    background: linear-gradient(to bottom, #B290FF, #2E1D65);
-    transition: opacity 300ms linear;
-  }
   
   /*
   ================-

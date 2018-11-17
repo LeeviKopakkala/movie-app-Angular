@@ -1,0 +1,13 @@
+@import "../../styles.scss";
+
+.page {
+    width:100% !important;
+    overflow:hidden;
+    height: 50vh;
+}
+.popular-header {
+    text-align:left;
+    width: 100vw;
+    color:$white;
+    font-weight:400;
+}
