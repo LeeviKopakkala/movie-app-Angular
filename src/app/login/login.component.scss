@@ -8,8 +8,8 @@
     z-index:5;
     margin:0 auto;
     height:100%;
-    width:50%;
-    max-width: 80%;
+    width:40%;
+    max-width: 40%;
     left:-2rem;
     align-content: center;
     align-self:center;
@@ -27,13 +27,14 @@
 
 @media only screen and (max-width: 1200px) {
     .login {
-        max-width:100% !important;
-        width:100%;
-        padding:2rem;
-        left:-2rem;
+        max-width:90% !important;
+        width:90%;
+        left:0.5rem;
+        max-height:80vh;
+        padding-top:4rem;
         border-left:0;
         border-bottom:1rem solid $light-red;
-        margin-top:2rem;
+        margin-top:0rem;
     }
     input {
         width:100%;
