@@ -15,6 +15,7 @@ import { JwtInterceptor } from './helpers/jwt.interceptor';
 
 import { AuthenticationService } from '../services/auth.service';
 import { PopularComponent } from './popular/popular.component';
+import { DragScrollModule } from 'ngx-drag-scroll';
 
 library.add(faFilm, faHome, faCog );
 
@@ -31,6 +32,7 @@ library.add(faFilm, faHome, faCog );
     FontAwesomeModule,
     ReactiveFormsModule,
     HttpClientModule,
+    DragScrollModule,
   ],
   providers: [
     { provide: HTTP_INTERCEPTORS, useClass: JwtInterceptor, multi: true },

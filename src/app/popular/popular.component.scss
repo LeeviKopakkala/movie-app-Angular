@@ -13,3 +13,16 @@
     width:20rem;
     max-width:70%;
 }
+
+
+.scrolling-wrapper {
+    display: flex;
+    max-width:100vw;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+    .card {
+        flex: 0 0 auto;
+        padding-right:10rem;
+        padding-left: 10rem;
+    }
+  }

@@ -1,3 +1,7 @@
-<div class="scrollmenu" *ngFor="let movie of popularMovies">
-    <p style="color:white">{{movie.Title}}</p>
-</div>
+<drag-scroll class="scrolling-wrapper">
+    <div *ngFor="let movie of popularMovies">
+        <div class="card">
+            <p drag-scroll-item style="color:white">{{movie.Title}}</p>
+        </div>
+    </div>
+</drag-scroll>
