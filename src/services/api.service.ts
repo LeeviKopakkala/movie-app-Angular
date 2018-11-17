@@ -15,13 +15,11 @@ export  class  ApiService {
   getPopular(){
       let user = this.authService.currentUserValue;
       console.log(user);
-      return this.http.post<any>(`${Config.apiUrl}/user/login`, {email: username, password: password })
-      .pipe(map(user => {
+      return this.http.post<any>(`${Config.apiUrl}/movie/search`, { Authorization: 'Basic ZW5kdW14Oll0U21DbU9wU1I=', 'JWT-X': 'Bearer' + user.token, 'keyword': 'Dead' })
+      .pipe(map(movie => {
           // If User is set and has a token
-          if (user && user.token) {
-              localStorage.setItem('currentUser', JSON.stringify(user));
-          }
-          return user;
+          console.log(movie);
+          return movie;
       }));
   }
 
