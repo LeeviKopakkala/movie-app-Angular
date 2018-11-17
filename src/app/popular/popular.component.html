@@ -1,7 +1,8 @@
 <drag-scroll class="scrolling-wrapper">
     <div *ngFor="let movie of popularMovies">
         <div class="card">
-            <p drag-scroll-item style="color:white">{{movie.Title}}</p>
+            <img drag-scroll-item src="{{movie.Poster}}">
+            <!---->
         </div>
     </div>
 </drag-scroll>

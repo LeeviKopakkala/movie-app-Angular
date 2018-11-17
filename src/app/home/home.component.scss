@@ -2,7 +2,6 @@
 
 .page {
     width:100% !important;
-    overflow:hidden;
     height: 50vh;
 }
 .popular-header {
@@ -10,4 +9,11 @@
     width: 100vw;
     color:$white;
     font-weight:400;
+}
+.popular-movies {
+    height:100vh !important; 
+}
+
+section {
+    position:relative;
 }
