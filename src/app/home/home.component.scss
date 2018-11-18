@@ -17,3 +17,14 @@
 section {
     position:relative;
 }
+
+iframe {
+    width:25vw;
+    height:30vh;
+}
+
+@media only screen and (max-width: 1000px) {
+    iframe {
+        width:90vw;
+    }
+}
