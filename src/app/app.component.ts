@@ -15,6 +15,7 @@ export class AppComponent implements OnInit {
   showMenu = false;
 
   currentUser: User;
+  logged = false;
 
   constructor(
     private router: Router,
@@ -24,7 +25,10 @@ export class AppComponent implements OnInit {
     }
 
   ngOnInit() {
-
+    if (localStorage.hasOwnProperty('currentUser') == true) {
+      this.logged = true;
+      console.log(this.logged);
+    }
   }
 
   toggleMenu() {

@@ -38,7 +38,7 @@
     height: 100%;
     overflow: hidden;
     pointer-events: none;
-    z-index: 25;
+    z-index: 150;
   }
   
   .side-menu__container-active {
@@ -194,10 +194,10 @@
   /*Header*/
   .main__header {
     width: 100%;
-    z-index:10;
+    z-index:200;
     opacity:0.8;
     display: grid;
-    grid-template-columns: 0fr 0.03fr 0.25fr;
+    grid-template-columns: 0fr 0.0fr 0.25fr;
     grid-template-rows: 1fr;
     box-shadow: 0 0 2rem $black;
     height: 4rem;
@@ -220,6 +220,7 @@
     grid-template-rows: 1fr;
     grid-template-columns: 1fr 1fr;
     max-width: 5rem;
+    
   }
   
   .date__text {
@@ -232,7 +233,7 @@
   /*SVGs*/
   .hamburger__icon {
     position: relative;
-    z-index: 35;
+    z-index:999 !important;
     height: 1rem;
     padding: 0.5rem 1.5rem;
     margin-right: 1rem;
@@ -248,17 +249,10 @@
     fill: #2B244D;
   }
   
-  .logo__text-dark {
-    fill: #ffff;
-  }
-  
   .hamburger__icon__fill {
     fill: $white;
   }
   
-  .hamburger__icon__fill-dark {
-    fill: #ffff;
-  }
   
   /*
   ================
