@@ -35,7 +35,7 @@ iframe {
     }
     .home-header-big {
         font-size:2rem;
-        padding-top:1rem !important;
+        padding-top:0rem !important;
     }
     img {
         width:35vw !important;
@@ -54,13 +54,19 @@ img {
 .home-header-big {
     font-size:5rem;
     padding:5rem;
-    padding-top:7.5rem;
+    padding-top:5rem;
     background-size: cover;
     max-width:90vw;
 }
 
+.home-header-hashtag{
+    font-size:1.5rem;
+    margin-top:0;
+    font-weight:300;
+}
+
 .home-header-small {
-    font-size:2rem;
+    font-size:1.2rem;
     color:$white;
 }
 
