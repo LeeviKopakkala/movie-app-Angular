@@ -1,9 +1,9 @@
-<video data-ng-init="this.play();" id="background-image" autoplay muted loop>
+<video ng-init="this.play()" id="background-image" #videoPlayer autoplay muted loop>
     <source src="../../assets/login.mp4" type="video/mp4">
     <source src="../../assets/login.ogv" type="video/ogg"/>   
     <source src="../../assets/login.webm" type="video/webm"/>
 </video>
-<div class="page">
+<div class="page" onload>
     
     <section id="home-header">
             <img src="../../assets/movieapptransparent.png">

@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild } from '@angular/core';
 import { Router, ActivatedRoute } from '@angular/router';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { first } from 'rxjs/operators';
@@ -7,6 +7,12 @@ import { AuthenticationService } from '../../services/auth.service';
 
 @Component({templateUrl: 'login.component.html',  styleUrls: ['login.component.scss'],} )
 export class LoginComponent implements OnInit {
+
+
+  @ViewChild('videoPlayer') videoplayer: HTMLVideoElement;
+  item = <HTMLVideoElement>document.getElementById("background-image");
+  
+
     loginForm: FormGroup;
     loading = false;
     submitted = false;
@@ -28,7 +34,7 @@ export class LoginComponent implements OnInit {
             username: ['', Validators.required],
             password: ['', Validators.required]
         });
-
+        
     }
 
     // Get form fields
