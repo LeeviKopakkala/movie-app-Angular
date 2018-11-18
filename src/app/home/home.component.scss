@@ -18,6 +18,11 @@ section {
     position:relative;
 }
 
+#section-header {
+    align-content:right;
+    justify-content: right;
+}
+
 iframe {
     width:25vw;
     height:30vh;
@@ -27,4 +32,8 @@ iframe {
     iframe {
         width:90vw;
     }
+}
+
+img {
+    width:20vw; 
 }
