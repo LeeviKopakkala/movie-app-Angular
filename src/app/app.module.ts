@@ -16,6 +16,7 @@ import { JwtInterceptor } from './helpers/jwt.interceptor';
 import { AuthenticationService } from '../services/auth.service';
 import { PopularComponent } from './popular/popular.component';
 import { DragScrollModule } from 'ngx-drag-scroll';
+import { MovieDetailsComponent } from './movie-details/movie-details.component';
 
 library.add(faFilm, faHome, faCog );
 
@@ -24,7 +25,8 @@ library.add(faFilm, faHome, faCog );
     AppComponent,
     HomeComponent,
     LoginComponent,
-    PopularComponent
+    PopularComponent,
+    MovieDetailsComponent
   ],
   imports: [
     BrowserModule,

@@ -1,7 +1,7 @@
 <drag-scroll class="scrolling-wrapper">
     <div *ngFor="let movie of popularMovies">
         <div class="card">
-            <img drag-scroll-item src="{{movie.Poster}}">
+            <div drag-scroll-item><a routerLink="/movie/{{movie.imdbID}}"><img src="{{movie.Poster}}"></a></div>
             <!---->
         </div>
     </div>
