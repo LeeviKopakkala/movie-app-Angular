@@ -1,4 +1,8 @@
-<img id="background-image" src="../../assets/login.gif">
+<video onloadeddata="this.play();" id="background-image"  playsinline autoplay muted loop>
+        <source src="../../assets/login.mp4" type="video/mp4">
+        <source src="../../assets/login.ogv" type="video/ogg"/>   
+        <source src="../../assets/login.webm" type="video/webm"/> 
+</video>
 <section class="login">
     <img id="logo-login" src="../../assets/movieappsmalltext.png">
     <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">

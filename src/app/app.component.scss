@@ -108,6 +108,20 @@
   .slide-menu-active {
     transform: none;
   }
+
+  #background-image{
+    position:fixed;
+    z-index:0;
+    left: 0;
+    top: 0;
+    height: 100%;
+    min-width: 100%; 
+    min-height: 100%;
+    width: auto; 
+    height: auto;
+    background-size: cover;
+    background-size: 1920px auto;
+}
   
   .menu-header {
     display: grid;
@@ -180,6 +194,7 @@
   /*Header*/
   .main__header {
     width: 100%;
+    z-index:10;
     opacity:0.8;
     display: grid;
     grid-template-columns: 0fr 0.03fr 0.25fr;

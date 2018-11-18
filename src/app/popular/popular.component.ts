@@ -21,6 +21,6 @@ export class PopularComponent implements OnInit {
     this.apiService.getPopular().subscribe((data:  Array<object>) => {
         this.popularMovies = data;
     });
-}
+  }
 
 }

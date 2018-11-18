@@ -3,6 +3,7 @@
 .page {
     width:100% !important;
     height: 50vh;
+    background:$dark-grey;
 }
 .popular-header {
     text-align:left;
@@ -32,8 +33,58 @@ iframe {
     iframe {
         width:90vw;
     }
+    .home-header-big {
+        font-size:2rem;
+        padding-top:1rem !important;
+    }
+    img {
+        width:35vw !important;
+    }
 }
 
 img {
-    width:20vw; 
+    width:15vw; 
+}
+
+.home-header {
+    color:$white;
+}
+
+
+.home-header-big {
+    font-size:5rem;
+    padding:5rem;
+    padding-top:7.5rem;
+    background-size: cover;
+    max-width:90vw;
+}
+
+.home-header-small {
+    font-size:2rem;
+    color:$white;
+}
+
+.divide {
+    left:0;
+    width:10rem;
+}
+
+#home-header {
+    width:100%;
+
+}
+
+#home-header h1 {
+ z-index:10;
+}
+
+video {
+    position: absolute;
+    min-height: 100%;
+    min-width: 100%;
+    top: -200px;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 0;
 }
