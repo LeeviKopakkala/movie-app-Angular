@@ -1,0 +1,34 @@
+@import "../../styles.scss";
+
+.popular-header {
+    color:$light-red;
+    font-weight:100;
+    font-size:1rem;
+    text-align:left;
+    background-color:#FFF;
+    width:100%;
+}
+
+.popular-movies {
+    margin-left: 0rem !important;
+    width:20rem;
+    max-width:70%;
+}
+
+
+.scrolling-wrapper {
+    background:$dark-grey;
+    box-shadow: 5px 0px 100px 100px rgba(36, 36, 36, 0.247);
+    display: flex;
+    max-width:95vw;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+    .card {
+        flex: 0 0 auto;
+        margin:1rem;  
+        box-shadow: 0 5px 10px 0 rgba(105, 105, 105, 0.247);
+    }
+    img {
+        max-height:40vh;
+    }
+  }

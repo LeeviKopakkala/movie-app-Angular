@@ -4,23 +4,22 @@ import { AuthenticationService } from '../../services/auth.service';
 
 
 @Component({
-  selector: 'app-popular',
-  templateUrl: './popular.component.html',
-  styleUrls: ['./popular.component.scss'],
+  selector: 'app-playlist',
+  templateUrl: './playlist.component.html',
+  styleUrls: ['./playlist.component.scss']
 })
-export class PopularComponent implements OnInit {
+export class PlaylistComponent implements OnInit {
 
   popularMovies:  Array<any> = [];
   constructor(private  apiService:  ApiService, private authService: AuthenticationService) { }
 
   ngOnInit() {
-    this.getPopular();
+    this.getPlaylist();
   }
 
-  public getPopular(){
-    this.apiService.getPopular().subscribe((data:  Array<any>) => {
+  public getPlaylist(){
+    this.apiService.getUserPlayList().subscribe((data:  Array<any>) => {
         this.popularMovies = data;
     });
   }
-
 }
