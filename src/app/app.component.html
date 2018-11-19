@@ -5,7 +5,7 @@
       </section>
       <section class="menu-body">
         <a routerLink="/" class="menu-button"><fa-icon class="menu-button-icon" icon="home"></fa-icon><span class="button-name">Home</span></a>
-        <a *ngIf="logged==true" routerLink="/settings" class="menu-button"><fa-icon class="menu-button-icon" icon="cog"></fa-icon><span class="button-name">Settings</span></a>
+        <!--<a *ngIf="logged==true" routerLink="/settings" class="menu-button"><fa-icon class="menu-button-icon" icon="cog"></fa-icon><span class="button-name">Settings</span></a>-->
       </section>
       <section  *ngIf="logged==true" class="menu-footer">
             <a (click)="logout()" class="menu-button logout-button"><span class="button-name">Logout</span></a>

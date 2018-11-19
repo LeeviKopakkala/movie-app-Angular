@@ -1,1 +1,18 @@
-<p>{{movieDetails['Title']}}</p>
+
+<div id="movie-details">
+        <div class="movie-element">
+                <img src="{{movieDetails['Poster']}}">
+        </div>
+    <div class="movie-element">
+        <h1 class="movie-header">{{movieDetails['Title']}}</h1>
+        <p class="movie-info">Released: {{movieDetails['Released']}}</p>
+        <p class="movie-info">Genre: {{movieDetails['Genre']}}</p>
+
+        <p class="movie-desc">{{movieDetails['Plot']}}</p>
+        <p class="movie-desc">Actors: {{movieDetails['Actors']}}</p>
+    </div>
+    <div class="movie-element">
+            <h1 class="movie-header movie-info IMDB-SCORE">IMDB Score: {{movieDetails['imdbRating']}}</h1>
+    </div>
+     
+</div>
