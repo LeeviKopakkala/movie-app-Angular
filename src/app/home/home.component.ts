@@ -1,10 +1,11 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { ApiService } from  '../../services/api.service';
+import { SuggestedComponent } from '../suggested/suggested.component';
 
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
-  styleUrls: ['./home.component.scss']
+  styleUrls: ['./home.component.scss'],
 })
 
 export class HomeComponent implements OnInit {
@@ -24,10 +25,11 @@ export class HomeComponent implements OnInit {
   constructor(private  apiService:  ApiService) { }
 
   ngOnInit() {
+    this.getUserDetails();
   }
 
-  public getMovieDetails(id){
-    this.apiService.getMovieDetails(id).subscribe((data: Array<any>) => {
+  public getUserDetails(){
+    this.apiService.getUser().subscribe((data: Array<any>) => {
         this.userDetails = data;
     });
   }

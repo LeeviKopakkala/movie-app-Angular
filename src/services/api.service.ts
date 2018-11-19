@@ -12,10 +12,10 @@ export  class  ApiService {
 
   constructor(private http: HttpClient, private authService: AuthenticationService) {}
 
-  searchMovie(){
+  searchMovie(keyword){
       let user = this.authService.currentUserValue;
       console.log(user);
-      return this.http.post<any>(`${Config.apiUrl}/movie/search`, { Authorization: 'Basic ZW5kdW14Oll0U21DbU9wU1I=', 'JWT-X': 'Bearer' + user.token, 'keyword': 'Dead' })
+      return this.http.post<any>(`${Config.apiUrl}/movie/search`, { Authorization: 'Basic ZW5kdW14Oll0U21DbU9wU1I=', 'JWT-X': 'Bearer' + user.token, 'keyword': keyword })
       .pipe(map(movie => {
           // If User is set and has a token
           console.log(movie);
@@ -56,7 +56,7 @@ export  class  ApiService {
         }));
     }
     getUser(){
-        return this.http.get<any>(`${Config.apiUrl}user/getInfo`)
+        return this.http.get<any>(`${Config.apiUrl}/user/getInfo`)
         .pipe(map(user => {
             // If User is set and has a token
             console.log(user);

@@ -19,6 +19,7 @@ import { DragScrollModule } from 'ngx-drag-scroll';
 import { MovieDetailsComponent } from './movie-details/movie-details.component';
 import { RegisterComponent } from './register/register.component';
 import { PlaylistComponent } from './playlist/playlist.component';
+import { SuggestedComponent } from './suggested/suggested.component';
 
 library.add(faFilm, faHome, faCog );
 
@@ -30,7 +31,8 @@ library.add(faFilm, faHome, faCog );
     PopularComponent,
     MovieDetailsComponent,
     RegisterComponent,
-    PlaylistComponent
+    PlaylistComponent,
+    SuggestedComponent
   ],
   imports: [
     BrowserModule,

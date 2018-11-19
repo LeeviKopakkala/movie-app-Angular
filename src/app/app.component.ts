@@ -9,7 +9,7 @@ import { User } from './models/user';
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss'],
-  providers: [ AuthenticationService ]
+  providers: [ AuthenticationService ],
 })
 export class AppComponent implements OnInit {
   showMenu = false;
@@ -22,6 +22,7 @@ export class AppComponent implements OnInit {
     private authenticationService: AuthenticationService
     ) {
         this.authenticationService.currentUser.subscribe(x => this.currentUser = x);
+        console.log(this.currentUser);
     }
 
   ngOnInit() {
@@ -39,5 +40,6 @@ export class AppComponent implements OnInit {
     this.authenticationService.logout();
     this.router.navigate(['/login']);
   }
+
 
 }
