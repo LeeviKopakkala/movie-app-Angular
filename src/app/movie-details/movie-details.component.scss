@@ -78,6 +78,16 @@ img {
     font-size:1rem;
 }
 
+.PLAYLIST {
+    background:$dark-red;
+    padding:1rem;
+    border-radius: 2px;
+    color:$white;
+    border-radius:2px;
+    font-size:1rem;
+    cursor:pointer;
+}
+
 .movie-desc{
     color:#a5a5a5;
 }

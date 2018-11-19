@@ -13,6 +13,7 @@
     </div>
     <div class="movie-element">
             <h1 class="movie-header movie-info IMDB-SCORE">IMDB Score: {{movieDetails['imdbRating']}}</h1>
+            <h1 (click) class="movie-header movie-info PLAYLIST">{{movieDetails['InPlaylist'] ? "Remove from playlist" : "Add to playlist"}}</h1>
     </div>
      
 </div>
