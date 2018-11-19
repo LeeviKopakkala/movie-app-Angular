@@ -17,6 +17,7 @@ import { AuthenticationService } from '../services/auth.service';
 import { PopularComponent } from './popular/popular.component';
 import { DragScrollModule } from 'ngx-drag-scroll';
 import { MovieDetailsComponent } from './movie-details/movie-details.component';
+import { RegisterComponent } from './register/register.component';
 
 library.add(faFilm, faHome, faCog );
 
@@ -26,7 +27,8 @@ library.add(faFilm, faHome, faCog );
     HomeComponent,
     LoginComponent,
     PopularComponent,
-    MovieDetailsComponent
+    MovieDetailsComponent,
+    RegisterComponent
   ],
   imports: [
     BrowserModule,

@@ -10,7 +10,7 @@ import { AuthenticationService } from '../../services/auth.service';
 })
 export class PopularComponent implements OnInit {
 
-  private popularMovies:  Array<object> = [];
+  popularMovies:  Array<object> = [];
   constructor(private  apiService:  ApiService, private authService: AuthenticationService) { }
 
   ngOnInit() {

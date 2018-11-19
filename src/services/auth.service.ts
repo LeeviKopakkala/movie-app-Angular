@@ -26,6 +26,16 @@ export class AuthenticationService {
                 return user;
             }));
     }
+    register(name: string, username: string, password: string) {
+        return this.http.post<any>(`${Config.apiUrl}/user/register`, { Authorization: 'Basic ZW5kdW14Oll0U21DbU9wU1I=' , name: name, email: username, password: password })
+            .pipe(map(user => {
+                // If User is set and has a token
+                if (user && user.token) {
+                    localStorage.setItem('currentUser', JSON.stringify(user));
+                }
+                return user;
+            }));
+    }
     public get currentUserValue(): User {
         return this.currentUserSubject.value;
     }

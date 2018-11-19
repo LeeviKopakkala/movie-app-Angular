@@ -2,14 +2,22 @@ import { Component, OnInit } from '@angular/core';
 import { ApiService } from  '../../services/api.service';
 import { ActivatedRoute } from '@angular/router';
 
+interface MovieDetails {
+  Poster:string,
+  Title:string
+}
+
 @Component({
   selector: 'app-movie-details',
   templateUrl: './movie-details.component.html',
   styleUrls: ['./movie-details.component.scss']
 })
+
+
+
 export class MovieDetailsComponent implements OnInit {
 
-  private movieDetails:  Array<object> = [];
+  movieDetails:  Array<any> = [];
   id: string;
   private sub: any;
 
@@ -23,7 +31,7 @@ export class MovieDetailsComponent implements OnInit {
   }
 
   public getMovieDetails(id){
-    this.apiService.getMovieDetails(id).subscribe((data:  Array<object>) => {
+    this.apiService.getMovieDetails(id).subscribe((data: Array<any>) => {
         this.movieDetails = data;
     });
   }
