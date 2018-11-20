@@ -1,5 +1,9 @@
 @import "../../styles.scss";
 
+a {
+    color:white;
+    text-decoration:none;
+}
 .popular-header {
     color:$light-red;
     font-weight:100;
@@ -32,3 +36,4 @@
         max-height:40vh;
     }
   }
+  

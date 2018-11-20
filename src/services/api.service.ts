@@ -51,6 +51,7 @@ export  class  ApiService {
         return this.http.post<any>(`${Config.apiUrl}/movie/showPlaylist`, { Authorization: 'Basic ZW5kdW14Oll0U21DbU9wU1I=', 'JWT-X': 'Bearer' + user.token })
         .pipe(map(movie => {
             // If User is set and has a token
+            console.log("PLAYLIST");
             console.log(movie);
             return movie;
         }));
@@ -63,6 +64,39 @@ export  class  ApiService {
             return user;
         }));
     }
-    
 
+    addToPlaylist(id, name){
+        let user = this.authService.currentUserValue;
+        console.log(user);
+        console.log(id, name);
+        return this.http.post<any>(`${Config.apiUrl}/movie/addToPlaylist`, { 'movieId': id, 'movieName': name,  Authorization: 'Basic ZW5kdW14Oll0U21DbU9wU1I=', 'JWT-X': 'Bearer' + user.token })
+        .pipe(map(movie => {
+            // If User is set and has a token
+            console.log(movie);
+            return movie;
+        }));
+    }
+    removeFromPlaylist(id){
+        let user = this.authService.currentUserValue;
+        console.log(user);
+        console.log(id);
+        return this.http.post<any>(`${Config.apiUrl}/movie/removeFromPlaylist`, { 'movieId': id, 'movieName': name,  Authorization: 'Basic ZW5kdW14Oll0U21DbU9wU1I=', 'JWT-X': 'Bearer' + user.token })
+        .pipe(map(movie => {
+            // If User is set and has a token
+            return movie;
+        }));
+    }
+
+    setWatched(id){
+        let user = this.authService.currentUserValue;
+        console.log(user);
+        console.log(id, name);
+        return this.http.post<any>(`${Config.apiUrl}/movie/setWatched`, { 'movieId': id, 'movieName': name,  Authorization: 'Basic ZW5kdW14Oll0U21DbU9wU1I=', 'JWT-X': 'Bearer' + user.token })
+        .pipe(map(movie => {
+            // If User is set and has a token
+            console.log(movie);
+            return movie;
+        }));
+    }
 }
+    

@@ -96,7 +96,19 @@ video {
 }
 
 .name-header {
+    margin-top:5rem;
     font-size:2rem;
-    padding-top:1rem;
+}
+
+.search-title {
+    font-family:$regular;
+    border: 0 solid black;
+    width:60%;
+    border-bottom: 1px solid $light-grey;
+    margin-top:1rem;
+    margin-bottom:1rem;
+    background:$dark-grey;
+    color:$white;
+    padding:0.5em;
 }
 

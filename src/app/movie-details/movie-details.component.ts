@@ -35,8 +35,23 @@ export class MovieDetailsComponent implements OnInit {
         this.movieDetails = data;
     });
   }
-  public addToList(){
+  public addToList(id, name, playlist){
+    if (playlist == false){
+      this.apiService.addToPlaylist(id, name).subscribe((data: Array<any>) => {
+        console.log(data);
+        window.location.reload();
+      });
+    } else {
+      this.apiService.removeFromPlaylist(id).subscribe((data: Array<any>) => {
+        window.location.reload();
+      });
+      
+    }
+
     
+    
+
+      
   }
   
 

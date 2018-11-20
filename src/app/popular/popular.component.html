@@ -1,8 +1,9 @@
 <drag-scroll class="scrolling-wrapper">
-    <div *ngFor="let movie of popularMovies" >
-        <div class="card">
-            <div drag-scroll-item ><a routerLink="/movie/{{movie.imdbID}}"><img src="{{movie.Poster}}"></a></div>
-            <!---->
+        <div *ngFor="let movie of popularMovies" >
+            <div class="card">
+                <div drag-scroll-item ><a routerLink="/movie/{{movie.movie_id}}">{{movie.name}}</a></div>
+                <!---->
+            </div>
         </div>
-    </div>
-</drag-scroll>
+    </drag-scroll>
+    
