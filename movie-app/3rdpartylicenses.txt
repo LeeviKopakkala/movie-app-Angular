@@ -351,6 +351,9 @@ MIT
 @angular/router
 MIT
 
+@fortawesome/angular-fontawesome
+MIT
+
 ngx-drag-scroll
 MIT
 MIT License
@@ -377,9 +380,6 @@ SOFTWARE.
 
 
 @angular/forms
-MIT
-
-@fortawesome/angular-fontawesome
 MIT
 
 zone.js
