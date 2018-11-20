@@ -20,6 +20,7 @@ import { MovieDetailsComponent } from './movie-details/movie-details.component';
 import { RegisterComponent } from './register/register.component';
 import { PlaylistComponent } from './playlist/playlist.component';
 import { SuggestedComponent } from './suggested/suggested.component';
+import { SearchComponent } from './search/search.component';
 
 library.add(faFilm, faHome, faCog );
 
@@ -32,7 +33,8 @@ library.add(faFilm, faHome, faCog );
     MovieDetailsComponent,
     RegisterComponent,
     PlaylistComponent,
-    SuggestedComponent
+    SuggestedComponent,
+    SearchComponent
   ],
   imports: [
     BrowserModule,

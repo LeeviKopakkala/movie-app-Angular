@@ -2,6 +2,7 @@ import { Component, OnInit, ViewChild } from '@angular/core';
 import { ApiService } from  '../../services/api.service';
 import { SuggestedComponent } from '../suggested/suggested.component';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-home',
@@ -25,7 +26,8 @@ export class HomeComponent implements OnInit {
       
   }
 
-  constructor(private  apiService:  ApiService, private formBuilder: FormBuilder,) { }
+  constructor(private  apiService:  ApiService, private formBuilder: FormBuilder, private router: Router,
+    ) { }
 
   ngOnInit() {
     this.getUserDetails();
@@ -46,6 +48,7 @@ export class HomeComponent implements OnInit {
 
   public onSearch(){
     
+    this.router.navigate(['/search/'+this.f.search.value]);
   }
 
 }

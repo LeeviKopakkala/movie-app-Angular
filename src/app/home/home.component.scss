@@ -103,12 +103,25 @@ video {
 .search-title {
     font-family:$regular;
     border: 0 solid black;
-    width:60%;
+    width:20rem;
     border-bottom: 1px solid $light-grey;
     margin-top:1rem;
     margin-bottom:1rem;
     background:$dark-grey;
     color:$white;
     padding:0.5em;
+}
+
+button {
+    font-family:$regular;
+    padding:0.8rem;
+    background: $light-red;
+    border:0;
+    margin-top:1rem;;
+    cursor:pointer;
+    border-radius:0.1rem;
+    color: $white;
+    width:5rem;
+    width:5rem;
 }
 
