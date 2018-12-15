@@ -19,34 +19,12 @@
 [Videoesittely käyttöliittymästä](https://www.youtube.com/watch?v=45yHiU1g4G0&feature=youtu.be)
 
 #### Tekijät
-* Leevi Kopakkala - K8292
-* Aku Lehtonen - K9264
-#### Kurssi
-* TTMS0900
-* TTMS0500
-#### Päivämäärä
-Valmistunut ja esitelty: 20.11.2018
-
-#### Itsearvio
-
-Vaikka molemmat olimme käyttäneet Laravelia aikaisemmin, tuli tässä projektissa paljon uusia haasteita.
-Miten toteuttaa Angularin ja Laravelin, sekä ulkoisen rajapinnan (OMDB) välinen liikenne ja näiden autentikaatiot.
-
-Loppujenlopuksi, onnistuimme hyvin ja pääsimme käyttämään aivan uusia tekniikoita saavuttaaksemme halutun lopputuloksen.
-Trial and error typpisesti.
-
-Aku Lehtonen - 5  
-Leevi Kopakkala - 5
+* Leevi Kopakkala
+* Aku Lehtonen
 
 # MovieApp
 
 MovieApp on käyttäjäpohjainen sovellus jossa käyttäjä voi luoda tunnuksen, hakea elokuvia [The Open Movie Databasesta](http://www.omdbapi.com/), hakea elokuvien tietoja ja lisätä elokuvia omalle soittolistalle. Soittolistalla elokuvat on mahdollista merkitä katsotuksi. Sovellus näyttää myös 10 käyttäjien eniten soittolistalle lisättyä elokuvaa. Sivulla listataan IMDbn Youtube kanavalta 10 viimeksi lisättyä videota jotka on haettu Youtuben virallisesta [APIsta](https://console.cloud.google.com/apis/library/youtube.googleapis.com?id=125bab65-cfb6-4f25-9826-4dcc309bc508&project=project1-1539692939637). 
-
-## Lähtökohta
-
-Ennen kuin tiesimme minkälaisen sovelluksen toteutamme, lähtökohtana oli toteuttaa backend [Laravelilla](https://laravel.com/), koska näimme sen todella tehokkaaksi vaihtoehdoksi luoda oikeasti tuotantokelpoinen sovellus nopeasti ja tehokkaasti. Käyttöliittymä eli sovelluksen frontend on toteutettu kokonaan omana projektinaan. Käyttöliittymä on toteutettu käyttäen [Angular](https://angular.io/) Javascript frameworkkia.
-
-Tämän lisäksi ajattelimme, että järkevintä on liittää TTMS0900 ja TTMS0500 -opintojaksojen harjoitustyöt yhteen ja näin saada eheämpi kokonaisuus.
 
 ## Asetelma
 
